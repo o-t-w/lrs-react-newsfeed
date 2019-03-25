@@ -1,28 +1,53 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "@pixelpusher/atomize/dist/compile.css";
+import "./App.scss";
+import "@ionic/core/css/core.css";
+import "@ionic/core/css/ionic.bundle.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+import {
+  IonApp,
+  IonCard,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonContent,
+  IonToggle
+} from "@ionic/react";
+
+import Card from "./components/Card";
+import React from "react";
+
+function App() {
+  return (
+    <IonApp>
+      <IonContent>
+        <div className="App">
+          <IonToggle />
+          <div className="grid mx-auto">
+            <Card span={2} />
+            <Card />
+            <Card />
+            <Card span={3} />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
+      </IonContent>
+    </IonApp>
+  );
 }
 
 export default App;
