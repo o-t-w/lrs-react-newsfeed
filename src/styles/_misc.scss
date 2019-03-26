@@ -1,0 +1,29 @@
+.transparent { opacity: 0; }
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* transforms */
+
+.rotate { transform: rotate(180deg); }
+
+/* z-index */
+
+.z4 { z-index: 4; }
+.z3 { z-index: 3; }
+.z2 { z-index: 2; }
+.z1 { z-index: 1; }
+.zneg1 { z-index: -1; }
+
+.scrollbar-thin { scrollbar-width: thin; }
+
+.list-reset	{
+    list-style: none;
+    padding: 0;
+}
+
+.circle { border-radius: 50%; }

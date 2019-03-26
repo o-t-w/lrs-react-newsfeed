@@ -1,0 +1,51 @@
+/* margins */
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mxy-auto {
+  margin: auto;
+} /* centers a grid item in both directions */
+
+.ml-auto {
+  margin-left: auto;
+} /* push grid item or flex item to the right */
+.mr-auto {
+  margin-right: auto;
+} /* push grid item or flex item to the left */
+
+/* specially for Ionic */
+.mt0 {
+  margin-top: 0;
+}
+
+//The numbers in $list are used to generate margin and padding classes with these value in pixels
+$list: 0, 1, 2, 4, 6, 10, 15, 20, 30, 40, 50, 70;
+@each $number in $list {
+  .m#{$number} {
+    margin: #{$number}px;
+  }
+  .mb#{$number} {
+    margin-bottom: #{$number}px;
+  }
+  .ml#{$number} {
+    margin-left: #{$number}px;
+  }
+  .p#{$number} {
+    padding: #{$number}px;
+  }
+  .pt#{$number} {
+    padding-top: #{$number}px;
+  }
+  .pb#{$number} {
+    padding-bottom: #{$number}px;
+  }
+  .pl#{$number} {
+    padding-left: #{$number}px;
+  }
+  .pr#{$number} {
+    padding-right: #{$number}px;
+  }
+}

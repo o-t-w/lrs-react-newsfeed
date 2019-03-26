@@ -1,5 +1,9 @@
 @import "styles/colors";
 @import "styles/flex";
+@import "styles/typography";
+@import "styles/spacing";
+@import "styles/sizing";
+@import "styles/misc";
 
 @font-face {
   font-family: "inter";
@@ -23,7 +27,7 @@ html {
   grid-auto-flow: dense;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -58,12 +62,12 @@ ion-icon {
 }
 
 .icon-container {
-  margin-left: 10px;
-  margin-right: 10px;
   color: var(--dark1);
+  justify-content: space-between;
 }
 
 .icon-container > * {
+  flex: 1;
   margin-top: 15px;
   margin-bottom: 15px;
   border-right: solid 1px var(--dark1);
@@ -71,4 +75,9 @@ ion-icon {
 
 .icon-container > *:last-child {
   border-right: none;
+}
+
+.small {
+  width: 40px;
+  height: 40px;
 }

@@ -1,0 +1,75 @@
+/* weights */
+
+.wght-100 {
+  font-weight: 100;
+}
+.wght-200 {
+  font-weight: 200;
+}
+.wght-300 {
+  font-weight: 300;
+}
+.wght-400 {
+  font-weight: 400;
+}
+.wght-500 {
+  font-weight: 500;
+}
+.wght-600 {
+  font-weight: 600;
+}
+.wght-700 {
+  font-weight: 700;
+}
+.wght-800 {
+  font-weight: 800;
+}
+.wght-900 {
+  font-weight: 900;
+}
+
+/* sizes */
+
+:root {
+  --text-xs: 1.2rem;
+  --text-sm: 1.4rem;
+  --text-base: 1.6rem;
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+}
+.text-sm {
+  font-size: var(--text-sm);
+}
+.text-base {
+  font-size: var(--text-base);
+}
+/* heading sizes are defined in base.scss */
+
+/* alignment */
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* case & underline */
+
+.uppercase {
+  text-transform: uppercase;
+}
+.no-underline {
+  text-decoration: none;
+}
+.underline {
+  text-decoration: underline;
+}

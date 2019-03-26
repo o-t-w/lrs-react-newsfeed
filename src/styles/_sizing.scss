@@ -1,0 +1,33 @@
+.min-height {
+  height: min-height;
+}
+
+.min-width {
+  width: min-width;
+}
+
+.max-width {
+  width: max-width;
+}
+
+/* width */
+
+.w-50 {
+  width: 50%;
+}
+.w-full {
+  width: 100%;
+}
+.w-screen {
+  width: 100vw;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+/* height */
+
+.min-h-screen {
+  min-height: 100vh;
+}
